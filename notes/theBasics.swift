@@ -139,7 +139,7 @@ you initialize a new number of the desired type with the existing value.
 */
 let twoThousand:UInt16 = 2_000
 let one:UInt8 = 1
-let twoThousandAndOne = twoThousand + UInt(one)  // UInt8 and UInt16: diff type
+let twoThousandAndOne = twoThousand + UInt16(one)  // UInt8 and UInt16: diff type
 
 // Integer and Floating-Point Conversion
 // int -> float must be made explicit
