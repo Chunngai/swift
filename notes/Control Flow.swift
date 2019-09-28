@@ -261,3 +261,5 @@ print(puzzleOutput)
 // can be used in a switch statement
 
 // Break in a Loop Statement
+
+// Break in a Switch Statement
