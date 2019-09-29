@@ -4,7 +4,7 @@ import UIKit
 print("Exercise 1\n")
 
 // 1.2
-print("Question", 1.2)
+print("Question 1.2")
 
 for _ in 0..<5 {
     // (1) '_' instead of 'i' since 'i' is not used
@@ -16,7 +16,7 @@ for _ in 0..<5 {
 print()
 
 // 1.6
-print("Question", 1.6)
+print("Question 1.6")
 
 var sum = 0
 for i in 1...9 {
@@ -27,7 +27,7 @@ print("The sum is \(sum)")
 print()
 
 // 1.8
-print("Question", 1.8)
+print("Question 1.8")
 
 let radius = 5.5
 let circlePerimeter = 2 * radius * 3.14
@@ -37,7 +37,7 @@ print("The perimeter of the circle is \(circlePerimeter) and its area is \(circl
 print()
 
 // 1.9
-print("Question", 1.9)
+print("Question 1.9")
 
 let width = 4.5
 let height = 7.9
@@ -48,7 +48,7 @@ print("The perimeter of the rectangle is \(rectanglePerimeter) and its area is \
 print()
 
 // 1.11
-print("Question", 1.11)
+print("Question 1.11")
 
 for i in 1...5 {
     // let fiveYearsSeconds: Double = i * 365 * 24 * 60 * 60

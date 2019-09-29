@@ -4,7 +4,7 @@ print("Exercise 2\n")
 // 5 6 13 19 23
 
 // 2.5
-print("Question", 2.5)
+print("Question 2.5")
 
 /* cannot used in the playground!
  
@@ -23,7 +23,7 @@ print("The gratuity is $\(gratuity) and total is $\(total)")
 print()
 
 // 2.6
-print("Question", 2.6)
+print("Question 2.6")
 
 var integer = Int("999")!
 
@@ -38,7 +38,7 @@ print("The sum of the digits is \(sum)")
 print()
 
 // 2.13
-print("Question", 2.13)
+print("Question 2.13")
 
 let monthlySavingAmount = Double("100")!
 var accountValue: Double = 0
@@ -51,7 +51,7 @@ print("After the six month, the account value is $\(accountValue)")
 print()
 
 // 2.19
-print("Question", 2.19)
+print("Question 2.19")
 
 let (x1, y1, x2, y2, x3, y3) = (1.5, -3.4, 4.6, Double(5), 9.5, -3.4)
 
@@ -65,7 +65,7 @@ print("The area of the triangle is \(area)")
 print()
 
 // 2.23
-print("Question", 2.23)
+print("Question 2.23")
 
 let distance = Double("900.5")!
 let milesPerGallon = Double("25.5")!
