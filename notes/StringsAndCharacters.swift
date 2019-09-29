@@ -249,6 +249,7 @@ let enclosedEAcute: Character = "\u{E9}\u{20DD}"  //  é⃝
 
 /*
 Unicode scalars for regional indicator symbols can be combined in pairs to make a single Character value
+Unicode scalars for regional indicator symbols can be combined in pairs to make a single Character value
 */
 let regionalIndicatorForUS: Character = "\u{1F1FA}\u{1F1F8}"
 

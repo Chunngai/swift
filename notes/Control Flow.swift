@@ -263,3 +263,130 @@ print(puzzleOutput)
 // Break in a Loop Statement
 
 // Break in a Switch Statement
+let numberSymbol: Character = "三"
+var possibleIntegerValue: Int?
+switch numberSymbol {
+case "1", "١", "一", "๑": 
+possibleIntegerValue = 1 
+case "2", "٢", "二", "๒": 
+possibleIntegerValue = 2 
+case "3", "٣", "三", "๓": 
+possibleIntegerValue = 3 
+case "4", "٤", "四", "๔": 
+possibleIntegerValue = 4 
+default:
+break;
+}
+if let integerValue = possibleIntegerValue {
+print("The integer value of \(numberSymbol) is \(integerValue).")
+} else {
+print("An integer value could not be found for \(numbersSymbol).")
+}
+
+// Fallthrough
+let integerToDescribe = 5
+var description = "The number \(integerToDescribe) is"
+switch integerToDescribe {
+case 2, 3, 5, 7, 11, 13, 17, 19:
+description += " a prime number, and also"
+fallthrough
+default:
+description += " an integer."
+}
+print(description)
+
+// Labeled Statements
+let finalSquare = 25 
+var board = [Int](repeating: 0, count: finalSquare + 1) 
+board[03] = +08; board[06] = +11; board[09] = +09; board[10] = +02 
+board[14] = -10; board[19] = -11; board[22] = -02; board[24] = -08 
+var square = 0 
+var diceRoll = 0 
+
+gameloop: while square != finalSquare {
+diceRoll += 1
+if diceRoll == 7 { diceRoll = 1 }
+switch square + diceRoll {
+case finalSquare:
+// ...
+break gameloop
+case let newSquare where newSquare > finalSquare:
+// ...
+continue gameloop
+default:
+// ...
+square += diceRoll
+square += board[square]
+}
+}
+print("Game over!")
+
+// Early Exit
+/*
+A guard statement, like an if statement, executes statements depending on the Boolean value of an expression. 
+You use a guard statement to require that a condition must be true 
+in order for the code after the guard statement to be executed. 
+Unlike an if statement, a guard statement always has an else clause—
+the code inside the else clause is executed if the condition is not true.
+*/
+func greet(person: [String: String]) {
+guard let name = person["name"] else {
+return
+}
+
+print("Hello \(name)!")
+
+guard let location = person["location"] else {
+print("I hope the wheather is nice near you.")
+return
+}
+
+print("I hope the wheather is nice in \(location).")
+}
+
+greet(person: ["name": "John"])
+great(person: ["name": "Jane", "location": "Cupertino"])
+
+/*
+If the guard statement’s condition is met, 
+code execution continues after the guard statement’s closing brace. 
+Any variables or constants that were assigned values 
+using an optional binding as part of the condition 
+are available for the rest of the code block that the guard statement appears in.
+If that condition is not met, 
+the code inside the else branch is executed. 
+That branch must transfer control to exit the code block 
+in which the guard statement appears. 
+It can do this with a control transfer statement 
+such as return, break, continue, or throw, 
+or it can call a function or method 
+that doesn’t return, such as fatalError(_:file:line:).
+*/
+
+// Checking API Availability
+/*
+You use an availability condition in an if or guard statement 
+to conditionally execute a block of code, 
+depending on whether the APIs you want to use are available at runtime. 
+The compiler uses the information from the availability condition 
+when it verifies that the APIs in that block of code are available.
+*/
+if #available(iOS 10, macOS 10.12, *) {
+// ...
+} else {
+// ...
+}
+
+/*
+The availability condition above specifies that in iOS, 
+the body of the if statement executes only in iOS 10 and later; 
+in macOS, only in macOS 10.12 and later. 
+The last argument, *, is required and specifies that on any other platform, 
+the body of the if executes on the minimum deployment target 
+specified by your target.
+*/
+
+/*
+In addition to specifying major version numbers like iOS 8 or macOS 10.10, 
+you can specify minor versions numbers like iOS 11.2.6 and macOS 10.13.3.
+*/
