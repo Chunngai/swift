@@ -60,7 +60,7 @@ var firstItem = shoppingList[0]
 // modify an elem
 shoppingList[0] = "Six eggs"
 
-//  replace with an array
+// replace with an array
 shoppingList[4...6] = ["Bananas", "Apples"]
 
 // insert
