@@ -123,3 +123,166 @@ with its argument label before it.
 The parameter name is used in the implementation of the function. 
 By default, parameters use their parameter name as their argument label.
 */
+func someFunction(firstParameterName: Int, secondParameterName: Int) {
+// In the function body, firstParameterName and secondParameterName
+// refer to he arg values for the first and second parameters
+}
+someFunction(firstParameterName: 1, secondParameterName: 2)
+/*
+All parameters must have unique names. 
+Although it’s possible for multiple parameters to have the same argument label, 
+unique argument labels help make your code more readable.
+*/
+
+// Specifying Argument Labels
+func someFunction(argumentLabel parameterName: Int) {
+// ...
+}
+
+func greet(person: String, from hometown: String) -> String {
+return "Hello \(person)! Glad you could visit from \(hometown)."
+}
+print(greet(person: "Bill", from: "Cupertino"))
+
+// Omitting Argument Labels
+func someFunction{_ firstParameterName: Int, secondParameterName: Int) {
+// ...
+}
+someFunction(1, secondParameterName: 2)
+
+// Default Parameter Values
+func someFunction(parameterWithoutDefault: Int, parameterWithDefault: Int = 12) {
+// ...
+}
+someFunction(parameterWithoutDefault: 3, parameterWithDefault: 6)
+someFunction(parameterWithoutDefault: 4)
+/*
+Place parameters that don’t have default values 
+at the beginning of a function’s parameter list, 
+before the parameters that have default values.
+*/
+
+// Variadic Parameters
+/*
+The values passed to a variadic parameter are made available 
+within the function’s body as an array of the appropriate type. 
+For example, a variadic parameter with a name of numbers and a type of Double... 
+is made available within the function’s body as a constant array 
+called numbers of type [Double].
+*/
+func arithmeticMean(_ numbers: Double...) -> Double {
+var total: Double = 0
+for number in numbers {
+total += number
+}
+return total / Double(numbers.count)
+}
+arithmeticMean(1, 2, 3, 4, 5)
+arithmeticMean(3, 8.25, 18.75)
+
+/*
+A function may have at most one variadic parameter.
+*/
+
+// In-Out Parameters
+/*
+Function parameters are constants by default.
+*/
+/*
+You can only pass a variable as the argument for an in-out parameter. 
+You cannot pass a constant or a literal value as the argument, 
+because constants and literals cannot be modified. 
+*/
+/*
+In-out parameters cannot have default values, 
+and variadic parameters cannot be marked as inout.
+*/
+func swapTwoInts(_ a: inout Int, _ b: inout Int) {
+let temporary = a
+a = b
+b = temporaryA
+}
+var someInt = 3
+var anotherInt = 107
+swapTwoInts(&someInt, &anotherInt)
+print("someInt is now \(someInt), and anotherInt is now \(anotherInt)")
+
+// Function Types
+/*
+Every function has a specific function type, 
+made up of the parameter types and the return type of the function.
+*/
+func addTwoInts(_ a: Int, _ b: Int) -> Int {
+return a + b
+}
+func multiplyTwoInts(_ a: Int, _ b: Int) -> Int {
+return a * b
+}
+
+func printHelloWorld() {
+print("hello, world")
+}
+
+// Using Function Types
+/*
+You use function types just like any other types in Swift. 
+For example, you can define a constant or variable to be of a function type 
+and assign an appropriate function to that variable
+*/
+var mathFunction: (Int, Int) -> Int = addTwoInts
+print("Result: \(mathFunction(2, 3))")
+
+mathFunction = multiplyTwoInts
+print("Result: \(mathFunction(2, 3))")
+
+/*
+As with any other type, you can leave it to Swift to infer the function type 
+when you assign a function to a constant or variable
+*/
+let anotherMathFunction = addTwoInts
+
+// Function Types as Parameter Types
+func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
+print("Result: \(mathFunction(a, b))")
+}
+printMathResult(addTwoInts, 3, 5)
+
+// Function Types as Return types
+func stepForward(_ input: Int) -> Int {
+return input + 1
+}
+func stepBackward(_ input: Int) -> Int {
+return input - 1
+}
+
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+return backward ? stepBackward : stepForward
+}
+
+var currentValue = 3
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+/*
+A reference to the returned function is stored 
+in a constant called moveNearerToZero.
+*/
+
+print("Counting to zero:")
+while currentValue != 0 {
+print("\(currentValue)...")
+currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
+
+// Nested Functions
+func chooseStepFunction(backward: Bool) -> (Int) -> Int {
+func stepForward(input: Int) -> Int { return input + 1 }
+func stepBackward(input: Int) -> Int { return input - 1 }
+return backward ? stepBackward : stepForward
+}
+var currentValue = -4
+let moveNearerToZero = chooseStepFunction(backward: currentValue > 0)
+while currentValue != 0 {
+print("\(currentValue)... ")
+currentValue = moveNearerToZero(currentValue)
+}
+print("zero!")
