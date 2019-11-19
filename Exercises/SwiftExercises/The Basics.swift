@@ -175,3 +175,60 @@ if let firstNumber = Int("4") {
 	}
 }
 
+// Implicitly Unwrapped Optionals
+let possibleString: String? = "An optional string."
+let forcedString: String = possibleString!
+
+let assumedString: String! = "An implicitly unwrapped optional string"
+let implicitString: String = assumedString
+
+if assumedString != nil {
+	print(assumedString)
+}
+
+if let definiteString = assumedString {
+	
+}print(definiteString)
+
+/* Error Handling */
+func canThrowAnError() throws {
+	// ...
+}
+
+do {
+	try canThrowAnError()
+} catch {
+	// ...
+}
+
+func makeASandwich() throws {
+	// ...
+}
+
+do {
+	try makeASandwich()
+	eatASandwich()
+} catch SandwichError.outOfCleanDishes {
+	washDishes()
+} catch SandwichError.missingIngredients(let ingredients) {
+	buyGroceries(ingredients)
+}
+
+/* Assertions and Preconditions */
+// Dubuggin with Assertions
+let age = -3
+assert(age >= 0, "A person's age can't be less than zero.")
+
+assert(age >= 0)
+
+if age > 0 {
+	print("You can ride the roller-coaster or the ferris wheel.")
+} else if age >= 0 {
+	print("You can ride the ferris wheel.")
+} else {
+	assertionFailure("A person's age can't be less than zero")
+}
+
+// Enforcing Preconditions
+precondition(index > 0, "Index must be greater than zero.")
+
