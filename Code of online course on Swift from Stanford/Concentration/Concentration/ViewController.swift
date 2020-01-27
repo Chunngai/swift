@@ -8,14 +8,14 @@
 
 import UIKit
 
-// View
+// Controller
 class ViewController: UIViewController {
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
-    
+
     var numberOfPairsOfCards: Int {
             return (cardButtons.count + 1) / 2
     }
-    
+
     private(set) var flipCount = 0 {
         didSet {
             updateFlipCountLabel()
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             updateFlipCountLabel()
         }
     }
-    
+
     @IBOutlet private var cardButtons: [UIButton]!
     @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             updateViewFromModel()
         }
     }
-    
+
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         }
         return emoji[card] ?? "?"
     }
-    
+
 }
 
 extension Int {
