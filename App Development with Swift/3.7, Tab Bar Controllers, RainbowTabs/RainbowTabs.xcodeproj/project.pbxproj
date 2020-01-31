@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		FF6B163423E2F30F007074B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B163323E2F30F007074B1 /* AppDelegate.swift */; };
 		FF6B163623E2F30F007074B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B163523E2F30F007074B1 /* SceneDelegate.swift */; };
-		FF6B163823E2F30F007074B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B163723E2F30F007074B1 /* ViewController.swift */; };
+		FF6B163823E2F30F007074B1 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6B163723E2F30F007074B1 /* RedViewController.swift */; };
 		FF6B163B23E2F30F007074B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6B163923E2F30F007074B1 /* Main.storyboard */; };
 		FF6B163D23E2F30F007074B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6B163C23E2F30F007074B1 /* Assets.xcassets */; };
 		FF6B164023E2F30F007074B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6B163E23E2F30F007074B1 /* LaunchScreen.storyboard */; };
+		FFB25F5A23E3177A0084196A /* OrangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25F5923E3177A0084196A /* OrangeViewController.swift */; };
+		FFB25F5C23E317DE0084196A /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25F5B23E317DE0084196A /* YellowViewController.swift */; };
+		FFB25F5E23E318010084196A /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25F5D23E318010084196A /* GreenViewController.swift */; };
+		FFB25F6023E318890084196A /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25F5F23E318890084196A /* BlueViewController.swift */; };
+		FFB25F6223E318A30084196A /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB25F6123E318A30084196A /* PurpleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF6B163023E2F30F007074B1 /* RainbowTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6B163323E2F30F007074B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6B163523E2F30F007074B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF6B163723E2F30F007074B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF6B163723E2F30F007074B1 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		FF6B163A23E2F30F007074B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF6B163C23E2F30F007074B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF6B163F23E2F30F007074B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF6B164123E2F30F007074B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB25F5923E3177A0084196A /* OrangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeViewController.swift; sourceTree = "<group>"; };
+		FFB25F5B23E317DE0084196A /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		FFB25F5D23E318010084196A /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		FFB25F5F23E318890084196A /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		FFB25F6123E318A30084196A /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +68,13 @@
 			children = (
 				FF6B163323E2F30F007074B1 /* AppDelegate.swift */,
 				FF6B163523E2F30F007074B1 /* SceneDelegate.swift */,
-				FF6B163723E2F30F007074B1 /* ViewController.swift */,
+				FF6B163723E2F30F007074B1 /* RedViewController.swift */,
 				FF6B163923E2F30F007074B1 /* Main.storyboard */,
+				FFB25F6123E318A30084196A /* PurpleViewController.swift */,
+				FFB25F5F23E318890084196A /* BlueViewController.swift */,
+				FFB25F5D23E318010084196A /* GreenViewController.swift */,
+				FFB25F5B23E317DE0084196A /* YellowViewController.swift */,
+				FFB25F5923E3177A0084196A /* OrangeViewController.swift */,
 				FF6B163C23E2F30F007074B1 /* Assets.xcassets */,
 				FF6B163E23E2F30F007074B1 /* LaunchScreen.storyboard */,
 				FF6B164123E2F30F007074B1 /* Info.plist */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6B163823E2F30F007074B1 /* ViewController.swift in Sources */,
+				FFB25F5E23E318010084196A /* GreenViewController.swift in Sources */,
+				FFB25F5A23E3177A0084196A /* OrangeViewController.swift in Sources */,
+				FF6B163823E2F30F007074B1 /* RedViewController.swift in Sources */,
 				FF6B163423E2F30F007074B1 /* AppDelegate.swift in Sources */,
+				FFB25F6223E318A30084196A /* PurpleViewController.swift in Sources */,
 				FF6B163623E2F30F007074B1 /* SceneDelegate.swift in Sources */,
+				FFB25F5C23E317DE0084196A /* YellowViewController.swift in Sources */,
+				FFB25F6023E318890084196A /* BlueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
