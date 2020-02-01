@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="SPx-zH-w74">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sagiri" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-RR-eyw">
+                                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1200"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xU8-RR-eyw" firstAttribute="leading" secondItem="SPx-zH-w74" secondAttribute="leading" id="MR6-EZ-1cT"/>
+                                    <constraint firstItem="xU8-RR-eyw" firstAttribute="bottom" secondItem="SPx-zH-w74" secondAttribute="bottom" id="XvR-MF-jv3"/>
+                                    <constraint firstItem="xU8-RR-eyw" firstAttribute="trailing" secondItem="SPx-zH-w74" secondAttribute="trailing" id="kio-en-nDK"/>
+                                    <constraint firstItem="xU8-RR-eyw" firstAttribute="top" secondItem="SPx-zH-w74" secondAttribute="top" id="t0v-ro-bJg"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0NK-06-Cf6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vYA-Nk-IFa"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SPx-zH-w74" secondAttribute="bottom" id="J7X-Ni-hSo"/>
+                            <constraint firstItem="SPx-zH-w74" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QmY-L1-MUp"/>
+                            <constraint firstItem="SPx-zH-w74" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ehL-N4-jcZ"/>
+                            <constraint firstItem="SPx-zH-w74" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="wH2-BE-yQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="xU8-RR-eyw" id="0Cc-AL-UfR"/>
+                        <outlet property="scrollView" destination="SPx-zH-w74" id="LqD-qw-3mB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sagiri" width="1920" height="1200"/>
+    </resources>
+</document>
