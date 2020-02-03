@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF24BFAA23E7273B00ACD1CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24BFA923E7273B00ACD1CA /* AppDelegate.swift */; };
+		FF24BFAC23E7273B00ACD1CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24BFAB23E7273B00ACD1CA /* SceneDelegate.swift */; };
+		FF24BFB123E7273B00ACD1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF24BFAF23E7273B00ACD1CA /* Main.storyboard */; };
+		FF24BFB323E7273C00ACD1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF24BFB223E7273C00ACD1CA /* Assets.xcassets */; };
+		FF24BFB623E7273C00ACD1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF24BFB423E7273C00ACD1CA /* LaunchScreen.storyboard */; };
+		FF24BFBE23E727B200ACD1CA /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24BFBD23E727B200ACD1CA /* Registration.swift */; };
+		FF24BFC023E7281500ACD1CA /* RoomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24BFBF23E7281500ACD1CA /* RoomType.swift */; };
+		FF24BFC223E72C2800ACD1CA /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24BFC123E72C2800ACD1CA /* AddRegistrationTableViewController.swift */; };
+		FF2CB2E423E7FD5B00951506 /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2CB2E323E7FD5B00951506 /* SelectRoomTypeTableViewController.swift */; };
+		FF2CB2E623E80DC200951506 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2CB2E523E80DC200951506 /* RegistrationTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FF24BFA623E7273B00ACD1CA /* HotelManzana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelManzana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF24BFA923E7273B00ACD1CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF24BFAB23E7273B00ACD1CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF24BFB023E7273B00ACD1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF24BFB223E7273C00ACD1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF24BFB523E7273C00ACD1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF24BFB723E7273C00ACD1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF24BFBD23E727B200ACD1CA /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		FF24BFBF23E7281500ACD1CA /* RoomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomType.swift; sourceTree = "<group>"; };
+		FF24BFC123E72C2800ACD1CA /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		FF2CB2E323E7FD5B00951506 /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
+		FF2CB2E523E80DC200951506 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF24BFA323E7273B00ACD1CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF24BF9D23E7273B00ACD1CA = {
+			isa = PBXGroup;
+			children = (
+				FF24BFA823E7273B00ACD1CA /* HotelManzana */,
+				FF24BFA723E7273B00ACD1CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF24BFA723E7273B00ACD1CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF24BFA623E7273B00ACD1CA /* HotelManzana.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF24BFA823E7273B00ACD1CA /* HotelManzana */ = {
+			isa = PBXGroup;
+			children = (
+				FF24BFA923E7273B00ACD1CA /* AppDelegate.swift */,
+				FF24BFAB23E7273B00ACD1CA /* SceneDelegate.swift */,
+				FF24BFAF23E7273B00ACD1CA /* Main.storyboard */,
+				FF2CB2E523E80DC200951506 /* RegistrationTableViewController.swift */,
+				FF2CB2E323E7FD5B00951506 /* SelectRoomTypeTableViewController.swift */,
+				FF24BFC123E72C2800ACD1CA /* AddRegistrationTableViewController.swift */,
+				FF24BFBD23E727B200ACD1CA /* Registration.swift */,
+				FF24BFBF23E7281500ACD1CA /* RoomType.swift */,
+				FF24BFB223E7273C00ACD1CA /* Assets.xcassets */,
+				FF24BFB423E7273C00ACD1CA /* LaunchScreen.storyboard */,
+				FF24BFB723E7273C00ACD1CA /* Info.plist */,
+			);
+			path = HotelManzana;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF24BFA523E7273B00ACD1CA /* HotelManzana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF24BFBA23E7273C00ACD1CA /* Build configuration list for PBXNativeTarget "HotelManzana" */;
+			buildPhases = (
+				FF24BFA223E7273B00ACD1CA /* Sources */,
+				FF24BFA323E7273B00ACD1CA /* Frameworks */,
+				FF24BFA423E7273B00ACD1CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotelManzana;
+			productName = HotelManzana;
+			productReference = FF24BFA623E7273B00ACD1CA /* HotelManzana.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF24BF9E23E7273B00ACD1CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Sola;
+				TargetAttributes = {
+					FF24BFA523E7273B00ACD1CA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FF24BFA123E7273B00ACD1CA /* Build configuration list for PBXProject "HotelManzana" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF24BF9D23E7273B00ACD1CA;
+			productRefGroup = FF24BFA723E7273B00ACD1CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF24BFA523E7273B00ACD1CA /* HotelManzana */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF24BFA423E7273B00ACD1CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF24BFB623E7273C00ACD1CA /* LaunchScreen.storyboard in Resources */,
+				FF24BFB323E7273C00ACD1CA /* Assets.xcassets in Resources */,
+				FF24BFB123E7273B00ACD1CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF24BFA223E7273B00ACD1CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2CB2E423E7FD5B00951506 /* SelectRoomTypeTableViewController.swift in Sources */,
+				FF24BFC023E7281500ACD1CA /* RoomType.swift in Sources */,
+				FF24BFC223E72C2800ACD1CA /* AddRegistrationTableViewController.swift in Sources */,
+				FF24BFAA23E7273B00ACD1CA /* AppDelegate.swift in Sources */,
+				FF24BFBE23E727B200ACD1CA /* Registration.swift in Sources */,
+				FF24BFAC23E7273B00ACD1CA /* SceneDelegate.swift in Sources */,
+				FF2CB2E623E80DC200951506 /* RegistrationTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF24BFAF23E7273B00ACD1CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF24BFB023E7273B00ACD1CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF24BFB423E7273C00ACD1CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF24BFB523E7273C00ACD1CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF24BFB823E7273C00ACD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF24BFB923E7273C00ACD1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF24BFBB23E7273C00ACD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotelManzana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HotelManzana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF24BFBC23E7273C00ACD1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HotelManzana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.HotelManzana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF24BFA123E7273B00ACD1CA /* Build configuration list for PBXProject "HotelManzana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF24BFB823E7273C00ACD1CA /* Debug */,
+				FF24BFB923E7273C00ACD1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF24BFBA23E7273C00ACD1CA /* Build configuration list for PBXNativeTarget "HotelManzana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF24BFBB23E7273C00ACD1CA /* Debug */,
+				FF24BFBC23E7273C00ACD1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF24BF9E23E7273B00ACD1CA /* Project object */;
+}
