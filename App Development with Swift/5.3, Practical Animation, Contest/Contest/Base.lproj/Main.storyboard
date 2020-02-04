@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Contest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter an email address in order to be entered into the contest" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wq-HG-Ckc">
+                                <rect key="frame" x="20" y="44" width="374" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZYB-i5-yTc">
+                                <rect key="frame" x="20" y="431" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-ay-zrA">
+                                <rect key="frame" x="183" y="491" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qKh-zN-WyW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZYB-i5-yTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0fF-Q0-TSa"/>
+                            <constraint firstItem="0Wq-HG-Ckc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="63h-cl-GPd"/>
+                            <constraint firstItem="ZYB-i5-yTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CaN-K7-MpW"/>
+                            <constraint firstItem="ctf-ay-zrA" firstAttribute="top" secondItem="ZYB-i5-yTc" secondAttribute="bottom" constant="26" id="QPw-Yh-d3G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctf-ay-zrA" secondAttribute="trailing" constant="182" id="UgS-yi-Xni"/>
+                            <constraint firstItem="ctf-ay-zrA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="183" id="YMy-7t-PYb"/>
+                            <constraint firstItem="0Wq-HG-Ckc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dJJ-Yq-xla"/>
+                            <constraint firstItem="ZYB-i5-yTc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hLr-ir-w1l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZYB-i5-yTc" secondAttribute="trailing" constant="20" id="s1p-gs-LKt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Wq-HG-Ckc" secondAttribute="trailing" constant="20" id="uKW-sR-BFH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ZYB-i5-yTc" id="L3p-q8-g5N"/>
+                        <segue destination="gbE-OA-MI5" kind="presentation" id="RGV-En-5SS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EaF-IJ-r2s">
+            <objects>
+                <viewController id="gbE-OA-MI5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vR7-SA-rdu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successfully entered the contest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnu-Mc-rEH">
+                                <rect key="frame" x="25" y="405.5" width="364.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cnu-Mc-rEH" firstAttribute="centerY" secondItem="vR7-SA-rdu" secondAttribute="centerY" id="SRa-ss-eON"/>
+                            <constraint firstItem="Cnu-Mc-rEH" firstAttribute="centerX" secondItem="vR7-SA-rdu" secondAttribute="centerX" id="rV0-FI-7rI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NBm-xZ-ZbT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oMo-mM-PqT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5U-nS-fHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="139"/>
+        </scene>
+    </scenes>
+</document>
